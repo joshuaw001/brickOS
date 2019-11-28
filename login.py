@@ -7,6 +7,7 @@ def login():
     if password == pinInput.value_text:
         pinError.fg = "green"
         pinError.value_text = "logging in..."
+        os.sleep(1000)
     elif pinInput.value_text == "":
         pinError.fg = "red"
     elif pinInput.value_text != password:
@@ -19,7 +20,5 @@ pinError    = Text(app, grid=[0,1], text="You must enter \n a PIN to login")
 pinError.fg = "white"
 pinError.bg = "white"
 PinEnter    = PushButton(app, text="LOGIN", command=login())
-
-
 
 app.display()
