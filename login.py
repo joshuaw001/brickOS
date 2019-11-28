@@ -8,6 +8,7 @@ def login():
         pinError.fg = "green"
         pinError.value_text = "logging in..."
         os.sleep(1000)
+        os.System("python screen.py")
     elif pinInput.value_text == "":
         pinError.fg = "red"
     elif pinInput.value_text != password:
