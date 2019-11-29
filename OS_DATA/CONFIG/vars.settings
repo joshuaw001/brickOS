@@ -1,0 +1,23 @@
+%%VARS%%
+
+EDITABLE {
+    $_CHANGE_LOG_FILE_$ = [
+        hx("DF0B") + "changes.loggerfile",
+        hx("ABC0") + "changes.loggerfile",
+        hx("2B0F") + "changes.loggerfile",
+        hx("ABCF") + "changes.loggerfile"
+    ];
+
+    $_STORAGE_FILES_$ = [
+        hx("FFDA") + "storage.folderfile",
+        hx("2D3F") + "storage.folderfile"
+    ];
+};
+
+ADMIN_ACCESS {
+    $_USERS_$ = ["AEDFMGIHNI"];
+    $_USER_CONFIG_INFO_$ = ["users.settings"];
+}
+
+NULL_ACCESS {
+    $_RESET_$ = [hx("FFEEDDCCBBAA99887766554433221100FDECDBCAB9A89786756453431201000")];
