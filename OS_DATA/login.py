@@ -1,4 +1,4 @@
-from guizero import *
+from guizero import App, Text, TextBox, PushButton
 import os
 
 app = App(layout="grid", bg="white")
@@ -20,6 +20,6 @@ pinInput    = TextBox(app, grid=[1,0])
 pinError    = Text(app, grid=[0,1], text="You must enter \n a PIN to login")
 pinError.fg = "white"
 pinError.bg = "white"
-PinEnter    = PushButton(app, text="LOGIN", command=login())
+PinEnterBtn = PushButton(app, text="LOGIN", command=login())
 
 app.display()
